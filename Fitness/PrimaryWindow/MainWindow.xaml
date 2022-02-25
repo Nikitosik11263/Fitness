@@ -7,7 +7,7 @@
         WindowStartupLocation="CenterScreen"
         WindowState="Maximized"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="1080">
+        Title="Авторизация" Height="720" Width="1080">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>   
@@ -88,6 +88,7 @@
             MaxLength="50"
             />
         <TextBox
+            x:Name="tbPass"
             Grid.Row="4"
             Grid.Column="1"
             VerticalAlignment="Center"
@@ -121,21 +122,21 @@
             TextAlignment="Center"
             VerticalAlignment="Center"
             />
-        <Button
-            x:Name="btnReg"
-            Content="Зарегистрироваться"
-            FontSize="18"
+        <TextBlock
+            
             Grid.Column="1"
             Grid.Row="7"
-            Width="300"
-            Height="50" 
-            Background="{x:Null}"
-            Foreground="#FF1B357C" 
-            BorderBrush="{x:Null}" 
-            VerticalAlignment="Bottom"
-            Click="btnReg_Click"    
-            Margin="30 10"
-            />
+            FontSize="18"
+            Foreground="#FF1B357C"
+            FontFamily="Microsoft Sans Serif"
+            TextAlignment="Center"
+            VerticalAlignment="Center">
+            <Hyperlink
+                x:Name="TbReg"
+                Click="TbReg_Click">
+                Зарегистрироваться
+            </Hyperlink>
+        </TextBlock>
         
     </Grid>
     

@@ -26,19 +26,21 @@ namespace Fitness
             InitializeComponent();
         }
 
-        private void btnReg_Click(object sender, RoutedEventArgs e)
-        {
-            this.Hide();
-            RegistrationWindow1 registrationWindow1 = new RegistrationWindow1(); 
-            registrationWindow1.ShowDialog();
-            this.Close();
-        }
+     
 
         private void Enter_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
             FinalDataWindow1 finaldataWindow1 = new FinalDataWindow1();
             finaldataWindow1.ShowDialog();
+            this.Close();
+        }
+
+        private void TbReg_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            RegistrationWindow1 registrationWindow1 = new RegistrationWindow1();
+            registrationWindow1.ShowDialog();
             this.Close();
         }
     }

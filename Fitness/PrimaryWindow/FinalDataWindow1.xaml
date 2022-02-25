@@ -7,7 +7,7 @@
         WindowStartupLocation="CenterScreen"
         WindowState="Maximized"
         mc:Ignorable="d"
-        Title="FinalDataWindow1" Height="720" Width="1080">
+        Title="Главное окно, Фитнес помощник" Height="720" Width="1080">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -32,12 +32,19 @@
                     Margin="0 10"
                     Foreground="#FF1B357C"
                     FontWeight="Bold" BorderBrush="{x:Null}" />     
-                <TextBlock
-                    Text="_____________________________________________________________________________________________________________________________________"
+                
+                <Line
+                    X1="0"
+                    X2="670"
+                    Y1="20"
+                    Y2="20"
+                    Stroke="#FF1B357C"
+                    StrokeThickness="1.2"
+                    VerticalAlignment="Center"
                     HorizontalAlignment="Center"
-                    Foreground="#FF1B357C"
-                    TextAlignment="Center"
                     />
+           
+               
                 <TextBlock Text="Ваши текущие показатели:"
                     Width="160"
                     HorizontalAlignment="Left"
@@ -153,7 +160,8 @@
                     Height="40"
                     Margin="250 -40 0 0"
                     Content="Отмена"
-                    FontSize="17" FontWeight="Bold"
+                    FontSize="17"
+                    FontWeight="Bold"
                     Background="{x:Null}"
                     BorderBrush="#FF1B357C"
                     Foreground="#FF1B357C"
